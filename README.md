@@ -1,3 +1,3 @@
 Systemintegration.CaseOpgave
 
-![alt text](http://url/to/img.png)
+![WeatherForcast](https://github.com/PODS4012/Systemintegration.CaseOpgave.Master/blob/master/Systemintegration.CaseOpgave.UI/wwwroot/WeatherForcast.png)
