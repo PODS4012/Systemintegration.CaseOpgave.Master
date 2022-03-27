@@ -1,0 +1,25 @@
+<Project Sdk="Microsoft.NET.Sdk.Web">
+
+  <PropertyGroup>
+    <TargetFramework>net6.0</TargetFramework>
+    <Nullable>enable</Nullable>
+    <ImplicitUsings>enable</ImplicitUsings>
+	<UserSecretsId>5b63e5ba-eeb9-468e-a61f-d887a1f357ba</UserSecretsId>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <PackageReference Include="Microsoft.VisualStudio.Web.CodeGeneration.Design" Version="6.0.2" />
+    <PackageReference Include="System.ServiceModel.Duplex" Version="4.8.*" />
+    <PackageReference Include="System.ServiceModel.Federation" Version="4.8.*" />
+    <PackageReference Include="System.ServiceModel.Http" Version="4.8.*" />
+    <PackageReference Include="System.ServiceModel.NetTcp" Version="4.8.*" />
+    <PackageReference Include="System.ServiceModel.Security" Version="4.8.*" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\Systemintegration.CaseOpgave.Service.Contracts\Systemintegration.CaseOpgave.Service.Contracts.csproj" />
+    <ProjectReference Include="..\Systemintegration.CaseOpgave.Service\Systemintegration.CaseOpgave.Service.csproj" />
+    <ProjectReference Include="..\Systemintegration.CaseOpgave.Shared\Systemintegration.CaseOpgave.Shared.csproj" />
+  </ItemGroup>
+
+</Project>

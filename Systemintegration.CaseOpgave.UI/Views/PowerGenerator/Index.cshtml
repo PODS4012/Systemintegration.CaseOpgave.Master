@@ -1,0 +1,41 @@
+﻿@model IEnumerable<Systemintegration.CaseOpgave.Shared.DataTransferObjects.PowerOutputParam>
+
+@{
+    ViewData["Title"] = "Index";
+}
+
+<h1>Power Generator Output</h1>
+
+@*<p>
+    <a asp-action="Create">Create New</a>
+</p>*@
+<table class="table">
+    <thead>
+        <tr>
+            <th>
+                @Html.DisplayNameFor(model => model.Date)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.Time)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.PowerOutput)
+            </th>
+        </tr>
+    </thead>
+    <tbody>
+@foreach (var item in Model) {
+        <tr>
+            <td>
+                @Html.DisplayFor(modelItem => item.Date)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.Time)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.PowerOutput) watt
+            </td>
+        </tr>
+}
+    </tbody>
+</table>
