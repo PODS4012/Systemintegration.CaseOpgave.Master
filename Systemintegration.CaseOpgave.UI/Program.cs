@@ -5,7 +5,7 @@ using Systemintegration.CaseOpgave.UI.Models;
 
 var builder = WebApplication.CreateBuilder(args);
 
-builder.Services.ConfigureService();
+builder.Services.ConfigureService(builder.Configuration);
 
 // Add services to the container.
 builder.Services.AddControllersWithViews();

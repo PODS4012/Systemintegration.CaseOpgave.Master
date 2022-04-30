@@ -1,0 +1,38 @@
+﻿@model IEnumerable<Systemintegration.CaseOpgave.Shared.DataTransferObjects.Temperatur>
+
+@{
+    ViewData["Title"] = "Index";
+}
+
+<h1>Temperatur Measurement Output</h1>
+
+<table class="table">
+    <thead>
+        <tr>
+            <th>
+                @Html.DisplayNameFor(model => model.Date)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.Time)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.Temp)
+            </th>
+        </tr>
+    </thead>
+    <tbody>
+@foreach (var item in Model) {
+        <tr>
+            <td>
+                @Html.DisplayFor(modelItem => item.DateStr)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.Time)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.Temp) &#8451
+            </td>
+        </tr>
+}
+    </tbody>
+</table>
