@@ -13,7 +13,7 @@ namespace Systemintegration.CaseOpgave.UI.Controllers
         }
         public IActionResult Index()
         {
-            double price = this.service.GetElectricityPrice().Result;
+            double price = this.service.GetElectricityPrice();
             return View((object?)price);
         }
     }

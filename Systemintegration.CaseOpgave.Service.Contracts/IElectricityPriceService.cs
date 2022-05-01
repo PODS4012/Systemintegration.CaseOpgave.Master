@@ -8,6 +8,6 @@ namespace Systemintegration.CaseOpgave.Service.Contracts
 {
     public interface IElectricityPriceService
     {
-        Task<double> GetElectricityPrice();
+        double GetElectricityPrice();
     }
 }

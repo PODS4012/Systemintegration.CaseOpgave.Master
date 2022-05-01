@@ -18,3 +18,7 @@
 ### Temperature Measurement Output UI
 
 ![TemperatureMeasurement](https://github.com/PODS4012/Systemintegration.CaseOpgave.Master/blob/master/Systemintegration.CaseOpgave.UI/wwwroot/TemperaturMeasurment.png)
+
+### Electricity Price Output UI
+
+![TemperatureMeasurement](https://github.com/PODS4012/Systemintegration.CaseOpgave.Master/blob/master/Systemintegration.CaseOpgave.UI/wwwroot/ElectricityPrice.png)
