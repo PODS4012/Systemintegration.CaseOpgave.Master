@@ -11,9 +11,9 @@ namespace Systemintegration.CaseOpgave.UI.Controllers
         {
             this.service = service;
         }
-        public IActionResult Index()
+        public async Task<IActionResult> Index()
         {
-            double price = this.service.GetElectricityPrice();
+             double price = this.service.GetElectricityPrice().Result;
             return View((object?)price);
         }
     }

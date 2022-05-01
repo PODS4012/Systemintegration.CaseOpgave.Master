@@ -21,11 +21,11 @@ namespace Systemintegration.CaseOpgave.Service
             this.consumerConfig = consumerConfig;
         }
 
-        public double GetElectricityPrice()
+        public async Task<double> GetElectricityPrice()
         {
 
             var producer = new ProducerWrapper(this.producerConfig, topic);
-            producer?.writePrice();
+            await producer.writePrice();
 
             var consumer = new ConsumerWrapper(consumerConfig, topic);
             double price = consumer.ReadPrice();
